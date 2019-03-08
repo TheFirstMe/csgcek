@@ -13,10 +13,12 @@ in which they occur in the input source code.
 2. Identifier (includes variable name, array name, struct name etc): ID
 3. Keyword: KEY
 4. Integer Constant: INT_CONST
-5.Any arithmetic operator like +,-,/,* : ARITH_OP
+5. Any arithmetic operator like +,-,/,* : ARITH_OP
 
 ```
+Use finite automata logic for performing lexical analysis.
 
+The output must be in the form of *Line number <token, lexeme>*
 ### Prerequisites
 
 What things you need to install the software and how to install them
