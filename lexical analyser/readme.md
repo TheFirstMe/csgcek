@@ -9,7 +9,12 @@ as input and outputs the following categories of tokens and the line number
 in which they occur in the input source code. 
 
 ```
-*test
+1. Relational operator : RELOP
+2. Identifier (includes variable name, array name, struct name etc): ID
+3. Keyword: KEY
+4. Integer Constant: INT_CONST
+5.Any arithmetic operator like +,-,/,* : ARITH_OP
+
 ```
 
 ### Prerequisites
