@@ -8,6 +8,10 @@ Write a C program to implement lexical analyser which takes a C program
 as input and outputs the following categories of tokens and the line number
 in which they occur in the input source code. 
 
+```
+*test
+```
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
