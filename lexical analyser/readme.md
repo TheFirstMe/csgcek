@@ -1,6 +1,6 @@
 # Lexical analyser in C using automata
 
-This program was done as part of an assignment of Compiler Design
+This program was done as part of an assignment for **CS304 - Compiler Design**
 
 ## Problem
 
