@@ -28,8 +28,6 @@ int main(){
         error("error connecting");
     }
 
-    strcpy(buffer,"TIME");
-    send(sockfd,buffer,sizeof(buffer),0);
     memset(buffer,0,sizeof(buffer));
     recv(sockfd,buffer,sizeof(buffer),0);
     printf("\nServer time: %s",buffer);

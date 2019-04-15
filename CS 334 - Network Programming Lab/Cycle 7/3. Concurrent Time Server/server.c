@@ -60,9 +60,6 @@ int main(){
 void *connection_handler(void *socket_descriptor){
     int sockfd = *(int *) socket_descriptor;
     char buffer[256];
-    if(recv(sockfd, buffer, sizeof(buffer),0) < 0){
-        error("cannot receive");
-    }
     memset(buffer,0,sizeof(buffer));
     time_t t;
     time(&t);
