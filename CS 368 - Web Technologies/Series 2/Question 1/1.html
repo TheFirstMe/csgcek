@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var res;
+            var func1,func2;
+            window.onload=function(){
+                function sum(){
+                    var a = parseInt(document.getElementById('first').value);
+                var b = parseInt(document.getElementById('second').value);
+                res=document.getElementById('res');
+                    res.innerHTML = "The result is "+(a+b)+"!";
+                }
+                function diff(){
+                    var a = parseInt(document.getElementById('first').value);
+                var b = parseInt(document.getElementById('second').value);
+                res=document.getElementById('res');
+                    res.innerHTML = "The result is "+(a-b)+"!";
+                }
+                func1 = sum;
+                func2 = diff;
+            }
+            
+            // var obj = new Object();
+            // obj.func = aloy;
+            // obj.func();
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Enter first no.</td>
+                <td><input type="text" id="first" /></td>
+            </tr>
+            <tr>
+                <td>Enter second no.</td>
+                <td><input type="text" id="second" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="ADD" onclick="func1()" /></td>
+                <td><input type="button" value="SUBTRACT" onclick="func2()" /></td>
+            </tr>
+            <tr>
+                <td><p id="res"></p></td>
+            </tr>
+        </table>
+    </body>
+</html>

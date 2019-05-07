@@ -12,6 +12,7 @@ void error(char *msg){
 }
 
 int main(){
+    int pid = fork();
     int sockfd;
     char buffer[256];
     struct sockaddr_in serv_addr;
@@ -24,13 +25,17 @@ int main(){
     serv_addr.sin_addr.s_addr = INADDR_ANY;
     serv_addr.sin_port = htons(PORT);
     int servsize = sizeof(serv_addr);
+if(pid==0)
+		sleep(5);
+	else
+		{wait(NULL);sleep(5);}
     if(connect(sockfd, (struct sockaddr *) &serv_addr, servsize) < 0){
         error("error connecting");
     }
 
     memset(buffer,0,sizeof(buffer));
     recv(sockfd,buffer,sizeof(buffer),0);
-    printf("\nServer time: %s",buffer);
+    printf("\nServer time: %s\n",buffer);
     // close(sockfd);
     return 0;
 }
